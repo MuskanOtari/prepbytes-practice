@@ -1,0 +1,141 @@
+    html {
+        margin-left: 139px;
+        margin-right: 139px;
+        margin-top: 30px;
+        font-family: Helvetica, Arial, sans-serif;
+        color: #424242;
+        right: 139px;
+    }
+    
+    ol {
+        font: italic;
+        color: blue;
+    }
+    
+    ol p {
+        font: bold;
+        color: #000000;
+    }
+    
+    .Group1 {
+        top: 899px;
+        left: 139px;
+        /* UI Properties */
+        opacity: 1;
+        /* UI Properties */
+        font-family: 'Inter';
+        text-align: left;
+        letter-spacing: 0px;
+        color: #858585;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    .backtracking {
+        /* UI Properties */
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #424242;
+        opacity: 1;
+        margin-bottom: 30px;
+    }
+    
+    .tab1 {
+        /* UI Properties */
+        font-family: Helvetica, Arial, sans-serif;
+        background: #F8F8F8 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+        opacity: 1;
+        right: 139px;
+        margin: 139;
+        padding: 139;
+    }
+    
+    .in1 {
+        margin-top: 17px;
+        margin-bottom: 17px;
+        margin-left: 28px;
+        margin-right: 28px;
+        /* UI Properties */
+        text-align: left;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #858585;
+        font-size: medium;
+    }
+    
+    .line {
+        color: #858585;
+        height: 1px;
+    }
+    
+    #h31 {
+        color: #424242
+    }
+    
+    .heading4 {
+        opacity: 1;
+        color: #424242;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    .tab2 {
+        border: 1px;
+        border: 1px solid #D8D8D8;
+        border-radius: 10px;
+        border-right: 3;
+    }
+    
+    .td2 {
+        /* UI Properties */
+        text-align: left;
+        letter-spacing: 0px;
+        color: #007EB4;
+        opacity: 1;
+        margin-left: 33px;
+        margin-top: 33px;
+        margin-right: 663px;
+        font-family: Helvetica, Arial, sans-serif;
+        margin-bottom: 33px;
+    }
+    
+    .tab3 {
+        font-family: 'Times New Roman', Times, serif;
+        margin: auto;
+    }
+    
+    .tab4 {
+        margin: auto;
+        margin-bottom: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        width: 624px;
+    }
+    
+    .tabin4 {
+        width: 300px;
+    }
+    
+    .tab5 {
+        border: 2px groove;
+    }
+    
+    .tab5 td {
+        border: 2px solid;
+        background-color: lightgrey;
+    }
+    
+    .imgintab {
+        margin: auto;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    
+    .pretag {
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }

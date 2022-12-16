@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./animated.gif" type="image/x-icon">
+
+    <title>Document</title>
+    <style>
+        .lang {
+            font-weight: normal;
+        }
+        
+        h1 {
+            width: 800px;
+            background-color: rgba(255, 217, 0, 0.989);
+            margin: auto;
+            border-radius: 15px;
+        }
+        
+        form {
+            width: 800px;
+            justify-content: center;
+            margin: auto;
+            background-image: url("./animation2.gif");
+            border-radius: 10px;
+        }
+        
+        label {
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        #submit {
+            height: 30px;
+            width: 30%;
+            background-color: rgba(255, 217, 0, 0.989);
+            border: 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center; ">Course Form<br></h1>
+
+    <form action="As_ment2_file2.html">
+
+        <table style="margin-right: 500px " border:0px>
+            <tr>
+                <td>
+                    <br>
+                    <label for="name" id="name_l">Name</label>
+                    <br>
+
+                </td>
+                <td>
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="name please" size="30px" maxlength="20" required>
+                    <br>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td> <br>
+                    <label for="email " id="email_l ">Email </label>
+                    <br>
+
+                </td>
+                <td> <br>
+                    <input type="email " name="email " id="email " placeholder="email please " size="30">
+                    <br>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td><br>
+                    <label for=" password " id="pass ">Password</label>
+                    <br>
+                </td>
+                <td>
+                    <br>
+                    <input type="password " name="password " id="password " placeholder="password please" size="30" maxlength="10" required>
+                    <br>
+
+                </td>
+            </tr>
+
+
+        </table>
+        <table style="border: 0px;">
+
+            <tr>
+                <td>
+                    <br>
+                    <label for="language">Language</label>
+                    <br><br>
+                    <input type="radio" name="laguage" id="react" value="React">
+                    <label for="react" class="lang">React</label>
+                    <br>
+
+                    <input type="radio" name="laguage" id="angular" value="Angular">
+                    <label for="angular" class="lang">Angular</label>
+                    <br>
+
+                    <input type="radio" name="laguage" id="vue" value="Vue">
+                    <label for="vue" class="lang">Vue</label>
+                    <br>
+                    <input type="radio" name="laguage" id="java " value="Java">
+                    <label for="java" class="lang">Java</label>
+                    <br>
+                    <input type="radio" name="laguage" id="machine_learning" value="Machine Learning ">
+                    <label for="machine_learning" class="lang">Machine-Learning</label>
+                    <br>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="course">Course </label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="course" id="mern " value="MERN ">
+
+                    <label for="course" id="label_mern" class="lang">MERN </label>
+                    <br>
+                    <input type="checkbox" name="course" id="machine_learning " value="Machine Learning ">
+
+                    <label for="course" id="label_machine " class="lang">Machine Learning </label>
+                    <br>
+                    <input type="checkbox" name="course" id="java_fullstack " value="Java Fullstack ">
+
+                    <label for="course" id="label_java_fullstack " class="lang">Java Fullstack </label>
+
+                    <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <label for="field">Field </label>
+                    <br>
+                    <select name="field" id="f_field ">Field: 
+                        <option value="Frontend ">Front-end</option>
+                        <option value="Backend ">Back-end</option>
+                        <option value="Dataase ">Database</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <br><br>
+                    <!-- Discription -->
+                    <label for="Discription: ">Discription </label><br>
+                    <textarea name="discription " id="discription " cols="30 " rows="10 " placeholder="select text area "></textarea>
+                    <br><br>
+                    <label for="phonenumber ">Phone-Number </label>
+                    <input type="tel " name="phonenumber " id="ph_num " placeholder="9922****** " size="0px">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <button id="submit"> submit </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                    <br>
+                    <h2>TABLES</h2>
+
+                    <a href="./table2.html ">Click-Here</a>
+                    <br><br>
+                </td>
+            </tr>
+
+        </table>
+
+
+
+
+        <!-- Course 
+        Checkbox
+        checkbox
+        checkbox
+
+        Fileld: 
+        select: frontend, backend, database
+        
+        discription box: select text area
+
+        Phone number lable and input text
+
+        heading : TABLES
+
+        clickhere link
+        -->
+
+        <br>
+
+
+
+
+        <!-- http://127.0.0.1:5500/Assignment2_form.html?
+                name=Muskan+Manoj+Otari&email+=2020.muskan.otari%40ves.ac.in
+                &password+=Muskan%4002
+                &laguage+=React+
+                &course+=MERN+
+                &course+=Machine+Learning+
+                &field=Backend
+                &discription+=Abc
+                &phonenumber+=9933456789 -->
+
+    </form>
+
+</body>
+
+
+
+</form>
+</body>
+
+
+</html>
