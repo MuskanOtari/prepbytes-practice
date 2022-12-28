@@ -1,0 +1,24 @@
+  html {
+      background-image: url(./image/img1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  .p2 {
+      font-family: "Romanesco";
+      font-size: 30px;
+      margin: auto;
+  }
+  
+  #imge2 {
+      background-image: url(./image/img2.png);
+      height: 150px;
+      width: 160px;
+      background-size: cover;
+      border-radius: 50%;
+      margin: auto;
+  }
+  
+  .btn {
+      background-color: rgba(0, 110, 254, 0.998);
+  }
