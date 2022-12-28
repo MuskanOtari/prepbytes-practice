@@ -2,30 +2,53 @@
 <html lang="en">
 
 <head>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 
 <body>
-    <table>
-        <tr>
-            <th>
 
-            </th>
-        </tr>
-        <tr>
-            <th>
+    <table border="2px">
+        <colgroup>
+            <col span="3" style="background-color:rgba(0, 157, 255, 0.854)">
+        </colgroup>
+        <caption>
+            <h1 style="text-align: center;">
+                Course Data Table
+            </h1>
 
-            </th>
-        </tr>
-        <tr>
-            <th>
+        </caption>
 
-            </th>
+        <thead>
+            <th></th>
+            <td>2 by 3 map</td>
+            <td>3 by 3 map</td>
+            <td>3 by 4 map</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Method 1:</td>
+                <td>60 ms.</td>
+                <td>840 ms.</td>
+                <td>60530ms.(1 minute)</td>
+            </tr>
+
+        </tbody>
+
+        <tr>
+            <td colspan="3">Method 2:</td>
+            <td>0ms.</td>
+
         </tr>
     </table>
+</body>
+
+</html>
 
 </body>
 
