@@ -1,0 +1,153 @@
+html {
+    background-image: url(./image.jpg);
+    border: 5px greenyellow;
+    border-style: outset;
+}
+
+.c1 {
+    height: 80px;
+    width: 180px;
+    position: relative;
+}
+
+.c2 {
+    height: 40px;
+    width: 250px;
+    position: absolute;
+    left: 130px;
+    top: 8px;
+}
+
+.c3 {
+    height: 110px;
+    width: 250px;
+}
+
+.container {
+    background-color: black;
+    border-radius: 22px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+    text-align: center;
+    border: 5px solid rgb(209, 4, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para {
+    color: aliceblue;
+}
+
+.parent_upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container_p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.h1 {
+    color: red;
+    opacity: 200px;
+}
+
+.circle {
+    background-color: cadetblue;
+    height: 260px;
+    width: 260px;
+    border: 4px solid rgb(88, 86, 86);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.parent_lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form_DIV {
+    height: 600px;
+    width: 310px;
+    margin-top: 20px;
+    background-color: white;
+    border-style: dashed;
+    border-color: red;
+    border-width: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.div_c {
+    display: flex;
+    align-items: center;
+}
+
+.p {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.form {
+    color: red;
+    text-align: center;
+}
+
+.c4 {
+    height: 30px;
+    width: 260px;
+    text-align: center;
+}
+
+.menu {
+    height: 30px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    margin: auto;
+}
+
+.box {
+    height: 250px;
+    width: 250px;
+    background-color: aqua;
+    border-radius: 25px;
+    text-align: center;
+    border: 2px #008042 solid;
+}
+
+.head_starter {
+    border-bottom: 1px solid gray;
+    color: #0f1a5f;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.boxes {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    gap: 40px
+}
+
+hr {
+    background-color: gray;
+    height: 1.5px;
+    border: 0;
+}

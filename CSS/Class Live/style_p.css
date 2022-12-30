@@ -1,24 +1,58 @@
-  html {
-      background-image: url(./image/img1.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-  
-  .p2 {
-      font-family: "Romanesco";
-      font-size: 30px;
-      margin: auto;
-  }
-  
-  #imge2 {
-      background-image: url(./image/img2.png);
-      height: 150px;
-      width: 160px;
-      background-size: cover;
-      border-radius: 50%;
-      margin: auto;
-  }
-  
-  .btn {
-      background-color: rgba(0, 110, 254, 0.998);
-  }
+ body {
+     background-image: url(./image/img1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin: auto;
+     align-items: center;
+ }
+ 
+ .p2 {
+     font-family: "Romanesco";
+     font-size: 40px;
+     margin: auto;
+     text-align: center;
+ }
+ 
+ #imge2 {
+     background-image: url(./image/img2.png);
+     height: 140px;
+     width: 140px;
+     background-size: cover;
+     border-radius: 50%;
+     margin: auto;
+     text-align: center;
+     margin-top: 10px;
+ }
+ 
+ .btn {
+     background-color: #D09CFA;
+     margin: auto;
+     border-radius: 3px;
+     font-family: "Romanesco";
+     font-size: 25px;
+     text-align: center;
+     display: flex;
+ }
+ 
+ .link {
+     color: black
+ }
+ 
+ .nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-color: #FAF8F1;
+     border-radius: 3px;
+ }
+ 
+ .links_parent {
+     display: flex;
+     gap: 26px;
+     justify-content: space-evenly;
+ }
+ 
+ .header {
+     position: sticky;
+     top: 0;
+ }
