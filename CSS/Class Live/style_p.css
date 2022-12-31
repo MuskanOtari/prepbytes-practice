@@ -1,3 +1,9 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
  body {
      background-image: url(./image/img1.jpg);
      background-repeat: no-repeat;
@@ -44,6 +50,7 @@
      align-items: center;
      background-color: #FAF8F1;
      border-radius: 3px;
+     top: 0;
  }
  
  .links_parent {
