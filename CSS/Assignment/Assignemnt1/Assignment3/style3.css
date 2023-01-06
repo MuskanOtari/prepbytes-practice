@@ -25,6 +25,7 @@ html {
     padding: 5px;
     box-shadow: 5px 10px #3e3b3b;
     font-size: large;
+    text-shadow: 1px 1px 1px#ebabc0;
 }
 
 hr {
@@ -45,11 +46,12 @@ hr {
     border-radius: 10px;
     border-bottom-color: #BE0EAA;
     padding: 5px;
-    box-shadow: 5px 10px #3e3b3b;
+    box-shadow: 5px 10px 1px #3e3b3b;
     font-size: large;
     height: 200px;
     width: 200px;
     margin-left: 0px;
+    text-shadow: 1px 1px 1px#313131;
 }
 
 .p_box2 {
