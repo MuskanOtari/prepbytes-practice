@@ -8,7 +8,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <style>
+        #cross {
+            border-radius: 50%;
+            background-color: #00A5EC;
+            border-color: #edededb5;
+            width: 40px;
+            height: 40px;
+            margin-right: 0px;
+        }
+        
+        #plus {
+            border-radius: 50%;
+            background-color: #00A5EC;
+            border-color: #edededb5;
+            width: 40px;
+            height: 40px;
+            margin-left: 0px;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,14 +47,14 @@
             <div>
                 <a href="./index.html">
 
-                    <button id="cross" class="btn" style="border-radius: 50%; background-color: #00A5EC; border-color: #edededb5;width: 40px;height: 40px;margin-right: 0px;">
+                    <button id="cross" class="btn">
                     <i class="fa fa-times"></i>
                 </button></a>
             </div>
             <div style=" display: flex; flex-direction: row;">
                 <div>
-                    <a href="./index4.html">
-                        <button id="plus" class="btn" style="border-radius: 50%; background-color: #00A5EC; border-color: #edededb5;width: 40px;height: 40px;margin-left: 0px;">
+                    <a href="./index2.html">
+                        <button id="plus" class="btn">
                         <i class="fa fa-plus"></i>
                     </button>
                     </a>
@@ -49,22 +67,24 @@
 
         </div>
         <div class="container2" style="display: flex ;justify-content: center;">
-            <div class="box1">
-                <div style="border-bottom: 1px solid #EDEDED;">
-                    <div style="color: #00A5EC;">
-                        <h3>Trip to Paris</h3>
+            <a href="./index4.html" style="text-decoration: none;">
+                <div class="box1">
+                    <div style="border-bottom: 1px solid #EDEDED;">
+                        <div style="color: #00A5EC;">
+                            <h3>Trip to Paris</h3>
+                        </div>
+                    </div>
+                    <div class="inside_box">
+                        <div class="linethrough">
+                            <input type="checkbox" name="visit_church" id="visit_church" checked=true disabled=true>
+                            <label for="visit_church">Vist Church</label></div>
+                        <div>
+                            <input type="checkbox" name="shopping" id="shopping">
+                            <label for="shopping">Shopping</label>
+                        </div>
                     </div>
                 </div>
-                <div class="inside_box">
-                    <div class="linethrough">
-                        <input type="checkbox" name="visit_church" id="visit_church" checked=true disabled=true>
-                        <label for="visit_church">Vist Church</label></div>
-                    <div>
-                        <input type="checkbox" name="shopping" id="shopping">
-                        <label for="shopping">Shopping</label>
-                    </div>
-                </div>
-            </div>
+            </a>
 
         </div>
     </div>
