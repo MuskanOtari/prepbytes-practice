@@ -1,0 +1,95 @@
+.nav {
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 30px #7B7B7B29;
+    opacity: 1;
+    padding: 0.5px;
+}
+
+.h1 {
+    padding-left: 60px;
+}
+
+.Add_button_div {
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+}
+
+.center_container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+}
+
+.btn:hover {
+    color: rgb(45, 17, 203);
+}
+
+.box1 {
+    border-radius: 5px;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    background-color: #FFFFFF;
+    border-color: #EDEDED;
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid #EDEDED;
+    cursor: pointer;
+}
+
+.box1:hover {
+    background-color: #baddfa;
+    box-shadow: 2px 2px 10px rgb(92, 91, 91);
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+html {
+    background-color: #edededb5;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.down_container {
+    margin-left: 80px;
+    margin-right: 80px;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.inside_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+#plus_id {
+    height: 80px;
+    width: 80px;
+}
+
+.linethrough {
+    text-decoration: line-through 1.5px gray;
+    opacity: 50%;
+}
