@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(./image/img1.jpg);
+    background: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
@@ -13,22 +13,10 @@ body {
 }
 
 .p2 {
-    font-family: 'Moon Dance', cursive;
-    font-size: 50px;
+    font-family: "Romanesco";
+    font-size: 40px;
     margin: auto;
     text-align: center;
-    color: #FFF;
-}
-
-.p3 {
-    font-family: "Yaldevi";
-    font-size: 20px;
-    margin: auto;
-    text-align: center;
-    color: #F7E8F6;
-    padding-bottom: 4px;
-    font-style: italic;
-    text-decoration: double underline #F7E8F6 1px;
 }
 
 #imge2 {
@@ -38,22 +26,18 @@ body {
     background-size: cover;
     border-radius: 50%;
     margin: auto;
+    text-align: center;
     margin-top: 10px;
 }
 
 .btn {
-    background-color: #e2bdff;
+    background-color: #D09CFA;
     margin: auto;
     border-radius: 3px;
     font-family: "Romanesco";
-    font-size: 28px;
+    font-size: 25px;
     text-align: center;
     display: flex;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #fbdaf9;
 }
 
 .link {
@@ -64,10 +48,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right, #6F38C5, #F7E8F6, #C147E9);
+    background-color: #FFF;
     border-radius: 3px;
     top: 0;
-    box-shadow: 0 3px 6px rgba(213, 207, 207, 0.05);
+    box-shadow: 0 3px 6px rgb(0 0 0 / 5%);
 }
 
 .links_parent {
@@ -80,14 +64,4 @@ body {
     position: sticky;
     top: 0;
     box-shadow: 0 3px 6px rgb(0 0 0 / 5%);
-}
-
-.img3 {
-    background-image: url(./image/img9.png);
-    background-position: bottom center;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 50%;
 }
