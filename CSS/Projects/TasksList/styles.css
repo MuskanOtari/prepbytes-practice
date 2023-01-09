@@ -41,6 +41,7 @@
     display: flex;
     border-bottom: 1px solid #EDEDED;
     cursor: pointer;
+    font-family: DM Sans;
 }
 
 .box1:hover {
@@ -93,3 +94,17 @@ html {
     text-decoration: line-through 1.5px gray;
     opacity: 50%;
 }
+
+#add_new_task {
+    font-family: 'Open Sans';
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px;
+    padding-top: 40px;
+}
+
+#add_new_task:hover {}

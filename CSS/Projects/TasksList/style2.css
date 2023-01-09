@@ -1,12 +1,14 @@
 .blur {
     /* Add the blur effect */
-    filter: blur(5px);
-    /* Full height */
-    /* Center and scale the image nicely */
+    filter: blur(3px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 60%;
+}
+
+.brightness_blur {
+    filter: brightness(60%);
 }
 
 .btn {
