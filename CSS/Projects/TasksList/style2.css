@@ -194,3 +194,7 @@ html {
     text-decoration: line-through 1.5px gray;
     opacity: 50%;
 }
+
+a {
+    text-decoration: none;
+}
