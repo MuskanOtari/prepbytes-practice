@@ -50,13 +50,17 @@
         color: white;
     }
     
-    #menu {
+    .menu {
+        background-image: url(./images/menu.png);
         cursor: pointer;
         width: fit-content;
         height: fit-content;
+        border-radius: 50%;
     }
     
-    #menu:hover {}
+    .menu:hover {
+        background-color: blue;
+    }
     
     h1 {
         width: 100%;
@@ -126,6 +130,7 @@
         grid-template-rows: repeat(2, auto);
         gap: 5%;
         padding: 0%;
+        position: relative;
     }
     
     .grid {
@@ -135,6 +140,19 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding: 22px;
+        cursor: pointer;
+    }
+    
+    .grid:hover {
+        position: relative;
+        bottom: 5%;
+    }
+    
+    @keyframes box {
+        0% {
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+        }
     }
     
     .grid1 {
@@ -171,7 +189,7 @@
         margin-top: 0px;
     }
     
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
         * {
             margin: 0%;
             padding: 0%;
@@ -195,10 +213,6 @@
         .container1 {
             position: sticky;
             top: 0;
-        }
-        .whole_contaner {
-            display: flex;
-            justify-content: center;
         }
         .grid {
             margin-bottom: 2%;
