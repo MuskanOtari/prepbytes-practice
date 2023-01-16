@@ -1,0 +1,13 @@
+@media screen and (max-width: 800px) {
+    * {
+        background-position: center;
+        background-size: cover;
+    }
+    .container2 {
+        margin: auto;
+    }
+    .inside_div {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

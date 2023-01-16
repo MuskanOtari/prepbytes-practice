@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App UI Mobile</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Abril+Fatface&family=Cabin&family=Caramel&family=DM+Sans&family=EB+Garamond:wght@400;500&family=Inconsolata&family=Moon+Dance&family=Raleway:wght@700&family=Romanesco&family=Yaldevi:wght@500&display=swap');
+    </style>
+    <style>
+        .add_new_task {
+            font-size: medium;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        #back {
+            border-radius: 50%;
+            background-color: #0f0f0f;
+            border-color: #edededb5;
+            width: 280%;
+            height: 70%;
+        }
+        
+        .container2 {
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="whole_container">
+        <div class="header">
+            <div>
+                <div class="header_inside">
+                    <h1 class="h1">Tasks
+                        <span style="color: #00A5EC;">List</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="Add_button_div" style="display: flex; justify-content: space-evenly; ">
+            <div class="inside_div" style="display: flex; justify-content: space-around;">
+                <div class="click_back" style="display: flex; flex-direction: row;">
+                    <a href="./index.html">
+
+                        <button id="back" class="btn">
+                    <i class="fa fa-arrow-left" style="color:#fff;"></i>
+                </button>
+                    </a>
+                    <a href="./index.html">
+                        <div>
+                            <label class="add_new_task" style=" margin-left: 58%;" for="add_new_task">Back</label>
+
+                        </div>
+                    </a>
+                </div>
+                <div style=" display: flex; flex-direction: row;">
+                    <div>
+                        <a href="./index2.html">
+                            <button id="plus" class="btn">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container2" style="display: flex ;justify-content: center;">
+                <a href="./index.html" style="text-decoration: none;">
+                    <div class="box1">
+                        <div style="border-bottom: 1px solid #EDEDED;">
+                            <div style="color: #00A5EC;">
+                                <h3>Trip to Paris</h3>
+                            </div>
+                        </div>
+                        <div class="inside_box">
+                            <div class="linethrough">
+                                <input type="checkbox" name="visit_church" id="visit_church" checked=true disabled=true>
+                                <label for="visit_church">Vist Church</label></div>
+                            <div>
+                                <input type="checkbox" name="shopping" id="shopping">
+                                <label for="shopping">Shopping</label>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

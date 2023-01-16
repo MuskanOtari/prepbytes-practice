@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=gi, initial-scale=1.0">
+    <title>Todo App UI Mobile</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Abril+Fatface&family=Cabin&family=Caramel&family=DM+Sans&family=EB+Garamond:wght@400;500&family=Inconsolata&family=Moon+Dance&family=Raleway:wght@700&family=Romanesco&family=Yaldevi:wght@500&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <div class="add_task">
+        <div class="container">
+            <div class="box">
+                <div class="upper_box">
+
+                    <div>
+                        <h2>Add New Task</h2>
+                    </div>
+                    <div class="coss">
+                        <a href="./index.html">
+                            <button id="cross" class="btn" style="border-radius: 50%; border-color: #edededb5;width: 30px;height: 30px;">
+                            <i class="fa fa-times"></i></button></a>
+                    </div>
+                </div>
+                <div class="inside_box">
+                    <div>
+                        <form action="#">
+                            <input type="text" id="list" name="list" list="suggestion" placeholder="Learn C++">
+                            <datalist id="suggestion">
+                                <option value="Learn C++">Learn C++</option>
+                                <option value="Learn Java">Learn Java</option>
+                                <option value="Learn Mongo DB">Learn Mongo DB</option>
+                              
+                            </datalist>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="plus_div">
+                    <div>
+                        <label for="add_new_task">
+                        <a href="./index.html">
+                            <button id="plus2" class="btn ">
+                            <i class="fa fa-plus " style="color: #EDEDED;"> Add Task</i></button></a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="brightness_blur">
+        <div class="blur ">
+            <div class="whole_container">
+                <div class="nav">
+                    <div>
+                        <nav>
+                            <h1 class="h1">Tasks
+                                <span style="color: #00A5EC;">List</span>
+                            </h1>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div class="Add_button_div" style="margin-top: 2px; margin-bottom: 1px; margin-right: 50px;">
+                    <div>
+                        <div>
+                            <a href="./index2.html"><button id="plus" class="btn" style="border-radius: 50%; background-color: #00A5EC; border-color: #edededb5;width: 40px;height: 40px;">
+                            <i class="fa fa-plus"></i></button></a>
+
+                        </div>
+                    </div>
+                    <div style="margin-top: 0.8em; margin-left: 2px;">
+
+                    </div>
+                </div>
+
+                <div class="center_container">
+
+                    <div class="down_container">
+                        <div class="container1" style="background-color: #EDEDED 0% 0% no-repeat padding-box;margin: auto;">
+                            <div class="box1">
+                                <div style="border-bottom: 1px solid #EDEDED;">
+                                    <div style="color: #00A5EC;">
+                                        <h3>Trip to Paris</h3>
+                                    </div>
+                                </div>
+                                <div class="inside_box">
+                                    <div class="linethrough">
+                                        <input type="checkbox" name="visit_church" id="visit_church" checked=true disabled=true>
+                                        <label for="visit_church">Vist Church</label></div>
+                                    <div>
+                                        <input type="checkbox" name="shopping" id="shopping">
+                                        <label for="shopping">Shopping</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div style="border-bottom: 1px solid #EDEDED;">
+                                    <div style="color: #00A5EC;">
+                                        <h3>My To Do List</h3>
+                                    </div>
+                                </div>
+                                <div class="inside_box">
+                                    <div class="linethrough">
+                                        <input type="checkbox" name="visit_church" id="visit_church" disabled=true checked=true>
+                                        <label for="visit_church">Vist Supermarket</label></div>
+                                    <div>
+                                        <input type="checkbox" name="shopping" id="shopping">
+                                        <label for="shopping">Buy Vegetables</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div style="border-bottom: 1px solid #EDEDED;">
+                                    <div style="color: #00A5EC;">
+                                        <h3>Movies I will Watch</h3>
+                                    </div>
+                                </div>
+                                <div class="inside_box">
+                                    <div class="linethrough">
+                                        <input type="checkbox" name="visit_church" id="visit_church" checked=true disabled=1>
+                                        <label for="visit_church">Stranger Things 4</label></div>
+                                    <div>
+                                        <input type="checkbox" name="shopping" id="shopping">
+                                        <label for="shopping">Avengers Endgame</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container2">
+                            <div class="box1">
+                                <div style="border-bottom: 1px solid #EDEDED;">
+                                    <div style="color: #00A5EC;">
+                                        <h3>Daily Morning Routine for</h3>
+                                    </div>
+                                </div>
+                                <div class="inside_box">
+                                    <div class="linethrough">
+                                        <input type="checkbox" name="visit_church" id="visit_church" checked=1 disabled=1>
+                                        <label for="visit_church">Wake up at 6 AM</label></div>
+                                    <div>
+                                        <input type="checkbox" name="shopping" id="shopping">
+                                        <label for="shopping">Sleep at 10pm</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div style="border-bottom: 1px solid #EDEDED;">
+                                    <div style="color: #00A5EC;">
+                                        <h3>Books to Read</h3>
+                                    </div>
+                                </div>
+                                <div class="inside_box">
+                                    <div class="linethrough">
+                                        <input type="checkbox" name="visit_church" id="visit_church" checked=1 disabled=1>
+                                        <label for="visit_church">Design of Everyday</label></div>
+                                    <div>
+                                        <input type="checkbox" name="shopping" id="shopping">
+                                        <label for="shopping">Alchemist</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<footer>
+    <br>
+    <br>
+</footer>
+
+</html>
