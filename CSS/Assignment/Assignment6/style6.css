@@ -19,17 +19,16 @@
     }
     
     nav {
-        width: 88%;
-        height: 30%;
         display: flex;
         justify-content: space-between;
         gap: 20%;
+        padding-right: 6%;
     }
     
     .container1 {
         padding: 2%;
-        padding-left: 4%;
-        padding-right: 4%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     
     .navbar {
@@ -51,7 +50,6 @@
     }
     
     #menu {
-        background-image: url(./images/menu.png);
         cursor: pointer;
         width: 40px;
         height: 80%;
@@ -144,8 +142,7 @@
     }
     
     .grid:hover {
-        position: relative;
-        bottom: 5%;
+        transform: translateY(-15px);
     }
     
     @keyframes box {
@@ -189,7 +186,7 @@
         margin-top: 0px;
     }
     
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 600px) {
         * {
             margin: 0%;
             padding: 0%;
@@ -215,7 +212,6 @@
             position: sticky;
             top: 0;
             z-index: 1;
-            padding-right: 3%;
         }
         .grid {
             margin-bottom: 2%;
@@ -224,11 +220,11 @@
             padding: 2%;
         }
         .sahara_container {
-            padding-right: 12%;
+            padding-right: 10%;
         }
     }
     
-    @media screen and (min-width: 801px)and (max-width:1024px) {
+    @media screen and (min-width: 601px)and (max-width:1024px) {
         * {
             margin: 0%;
             padding: 0%;
@@ -259,7 +255,6 @@
             position: sticky;
             top: 0;
             z-index: 1;
-            padding-right: 3%;
         }
         .grid_container {
             padding-right: 12%;
