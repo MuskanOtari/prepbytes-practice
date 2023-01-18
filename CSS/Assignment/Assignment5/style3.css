@@ -1,0 +1,170 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    background-position: center;
+    background-size: cover;
+}
+
+.wholediv {
+    border: 0.5rem solid;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-left-color: orange;
+    border-right-color: green;
+    overflow: hidden;
+}
+
+.sky {
+    background-image: url(./images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    height: 40%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.white {
+    background-color: white;
+}
+
+.green {
+    background-color: green;
+}
+
+.sun {
+    width: 8%;
+    height: 8%;
+    padding-left: 80%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.area {
+    position: relative;
+}
+
+.city {
+    display: flex;
+    width: 78vw;
+    height: 40vh;
+    position: relative;
+    animation: city linear infinite;
+    animation-duration: 12s;
+    margin: 0%;
+}
+
+.background2 {
+    background-image: url(./images/road.jpg);
+}
+
+.road1 {
+    margin: 0%;
+    width: 100vw;
+    height: 1px;
+    position: relative;
+}
+
+.road2 {
+    margin: 0%;
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    position: relative;
+    animation: road2 infinite linear;
+    animation-duration: 8s;
+    z-index: 0;
+}
+
+.car_div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 14vh;
+    z-index: 1;
+}
+
+.car {
+    width: 360px;
+    height: 180px;
+    animation: car normal;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+.flag {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    left: 54%;
+    bottom: 60%;
+}
+
+.wheel_div {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    gap: 60%;
+    bottom: 1%;
+}
+
+.wheel1 {
+    width: 92px;
+    height: auto;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.wheel2 {
+    width: 92px;
+    height: auto;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes car {
+    0% {
+        transform: translateY(3px);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes city {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes road2 {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

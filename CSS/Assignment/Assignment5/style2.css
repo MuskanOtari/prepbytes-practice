@@ -1,0 +1,97 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+
+.box1 {
+    transition-duration: 3s;
+    transition-timing-function: normal;
+}
+
+.box1:hover {
+    width: 300px;
+}
+
+.box2 {
+    transition-duration: 3s;
+    transition-timing-function: normal;
+}
+
+.box2:hover {
+    width: 300px;
+    height: 300px;
+}
+
+.box3 {
+    transition-duration: 3s;
+    transition-timing-function: linear;
+}
+
+.box3:hover {
+    width: 300px;
+}
+
+.box4 {
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
+
+.box4:hover {
+    width: 300px;
+}
+
+.box5 {
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+}
+
+.box5:hover {
+    width: 300px;
+}
+
+.box6 {
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+}
+
+.box6:hover {
+    width: 300px;
+}
+
+.box7 {
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+.box7:hover {
+    width: 300px;
+}
