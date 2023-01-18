@@ -1,0 +1,150 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    background-color: linen;
+    height: 200px;
+    width: 98%;
+    flex-direction: row;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: larger;
+    gap: 2%;
+    border-radius: 5px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    border: 2px solid white;
+}
+
+.box1 {
+    display: none;
+}
+
+.box2 {
+    visibility: hidden;
+}
+
+.box4 {
+    border-radius: 50%;
+}
+
+.box5 {
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+    background-color: yellow;
+}
+
+.box6 {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 12%;
+    background-color: maroon;
+}
+
+.box7 {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 24%;
+    background-color: green;
+}
+
+.box8 {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    top: 36%;
+    background-color: palevioletred;
+}
+
+.box9 {
+    width: 220px;
+    height: 220px;
+    background-color: lightgreen;
+}
+
+h4 {
+    position: absolute;
+    z-index: 4;
+    top: 66%;
+    left: 12%;
+}
+
+.box_in_ceter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: skyblue;
+    margin-bottom: 10px;
+}
+
+.container {
+    height: 80px;
+    width: 300px;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: larger;
+    flex-wrap: wrap;
+    align-content: space-between;
+    row-gap: 20px;
+    border: 2px solid white;
+}
+
+.two {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.three {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.four {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.five {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.six {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seven {
+    display: flex;
+    justify-content: stretch;
+    width: 300px;
+}
+
+.box10 {
+    background-color: orchid;
+    height: 60px;
+    width: 60px;
+}
