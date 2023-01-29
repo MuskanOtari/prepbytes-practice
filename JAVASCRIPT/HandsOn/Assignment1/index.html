@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ASSIGNMENT1</title>
+</head>
+
+<body>
+    <div class="solution1">
+        <h1>Assignment 1</h1>
+
+        <h3>Operators & Expressions</h3>
+
+        <h4>Operators & Expressions</h4>
+        <p>
+            Add two Numbers You are provided with two numbers A and B. Your task is to add these two numbers. Note: You have to complete AddTwoNumbers function. No need to take any input. Input Format The first line contains two integers A and B. Output Format Return
+            the result after adding two numbers.
+        </p>
+        <h4>Solution Code:</h4>
+        <pre>
+            const AddTwoNumbers = (a,b) => 
+            { 
+                let output = a+b; return output; 
+            };
+
+
+        </pre>
+    </div>
+    <div class="solution1 solution2">
+        <h1>Assignment 1</h1>
+
+        <h3>Operators & Expressions</h3>
+
+        <h4>Operators & Expressions</h4>
+        <p>
+            Find if the conditions are obeyed or not? You are given two number first as A and second as B and check if both conditions ( A
+            <10 and A>B ) are satisfied or not with the help of operators. Note: You have to complete Is_Valid function. No need to take any input. Input Format The first line contains two integers A and B . Output Format Return the result as true if the given
+                condition gets satisfied, else false.
+        </p>
+        <h4>Solution Code:</h4>
+        <pre>
+            const Is_Valid = (a,b) => {
+
+            if(a<10 && a>b)
+            {
+            return true;
+              
+            }
+              else
+            {
+                return false;
+                
+            }
+              
+              console.log(Is_Valid);
+              
+            };
+            
+        </pre>
+    </div>
+    <div class="solution1 solution3">
+
+        <h4>Check the conditions </h4>
+        <p>
+            Check the conditons You are given two numbers A and B . You need to do the following checks: if both are divisible by 10 console true. if both are not divisible by 10 console false. if one of them only is divisible by 10 console true. Use operator to
+            do this. Note: You have to complete Check function. No need to take any input. Input Format The first line contains two natural numbers A and B . Output Format Return the required result. Constraints 1 ≤ A , B ≤ 10000 Time Limit 1 second Example
+            Sample Input 12 20 Sample Output true
+        </p>
+
+        <h4>Solution Code:</h4>
+        <pre>
+            const Check = (A, B) => 
+            {
+                if((A%10===0)&&(B%10===0)){
+                return true;
+              } 
+              
+              else if((A%10===0)||(B%10===0)) {
+              return true;
+              } 
+              else return false;
+              console.log(Check);
+            };
+  
+  
+
+        </pre>
+    </div>
+
+    <div class="solution1 solution4">
+
+        <h4>Find the first digit of a 4 digit number</h4>
+        <p>
+            Find the first digit of a 4 digit number You are provided a four digit number N only. Your task is to print out the first digit of that number. Note: You have to complete First_Digit function. No need to take any input. Input Format The first line contains
+            one four digit natural number N . Output Format Return the required result. Constraints 1000 ≤ N ≤ 9999 Time Limit 1 second Example Sample Input 4567 Sample Output 4
+        </p>
+
+        <h4>Solution Code:</h4>
+        <pre>
+            const First_Digit = (n) => {
+            {
+            let first =n;
+               
+               while (first >= 10){
+                    first /= 10;
+                   
+                 
+               }
+               return Math.floor(first);
+              
+            }
+               console.log(First_Digit(n));
+            };
+            </pre>
+    </div>
+    <div class="solution1 solution4">
+
+        <h4>Find the last digit of a 4 digit number</h4>
+        <p>
+            Find the last digit of a 4 digit number You are provided a four digit number N only. Your task is to print out the last digit of that number. Note: You have to complete Last_Digit function. No need to take any input. Input Format The first line contains
+            one four digit natural number N . Output Format Return the required result. Constraints 1000 ≤ N ≤ 9999 Time Limit 1 second Example Sample Input 4567 Sample Output 7 </p>
+
+        <h4>Solution Code:</h4>
+        <pre>
+            const Last_Digit = (n) => {
+            {
+               return n % 10;
+            } 
+            
+            console.log(Last_Digit(n));
+          };
+          
+          </pre>
+    </div>
+
+</body>
+
+</html>
