@@ -102,7 +102,7 @@ ul {
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(4, auto);
     color: white;
-    gap: 10px;
+    gap: 20px;
     border: 1px solid black;
     position: relative;
 }
@@ -123,24 +123,24 @@ ul {
     grid-row: 2/3;
     background-color: lightgreen;
     text-align: center;
-    width: 448px;
-    height: 80px;
+    width: 99.5%;
+    height: 105%;
 }
 
 .g3 {
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: rgb(0, 132, 255);
-    width: 450px;
-    height: 80px;
+    width: 99.5%;
+    height: 105%;
 }
 
 .g4 {
     grid-column: 3/4;
     grid-row: 2/3;
     background-color: blue;
-    width: 450px;
-    height: 80px;
+    width: 99.%;
+    height: 105%;
 }
 
 .g5 {
@@ -148,14 +148,15 @@ ul {
     grid-row: 2/4;
     background-color: black;
     list-style-position: inside;
-    width: 80px;
+    width: 100%;
 }
 
 .g6 {
     grid-column: 1/4;
     grid-row: 3/4;
     background-color: orange;
-    height: 90px;
+    height: 100%;
+    width: 100%;
 }
 
 .g7 {
@@ -164,5 +165,5 @@ ul {
     background-color: rgb(1, 231, 231);
     color: black;
     text-align: center;
-    width: 1475px;
+    width: 100%;
 }
