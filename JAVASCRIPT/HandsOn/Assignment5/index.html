@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1>Javascript Assignment 5</h1>
+
+    <h2>Strings</h2>
+
+    <div class="solution">
+
+
+        <h4>Question 1: Count Characters.</h4>
+
+        <h3>Solution Code:</h3>
+        <pre>
+          const countCharacters = (S) => 
+          {
+              //we have to find the occurance of capital A
+              //and capital D in string
+              
+              let countOfA=0, countOfD=0;
+              for(let i=0; i< S.length;i++)
+              {
+                if(S[i]=="A")
+                  countOfA++;
+                
+                 if(S[i]=="D")
+                  countOfD++;
+              }
+              //Array Declaration
+             let array=[];
+              array[0]=countOfA;
+              array[1]=countOfD;
+          
+              return array;
+              
+          };
+           
+          </pre>
+    </div>
+    <div class="solution solution2">
+        <h4>Question 2: Count the Heads.</h4>
+        <h3>Solution Code:</h3>
+        <pre>
+          
+var Count_Occ = (s) => 
+{
+  let brr="";
+    for(let j=0; j< s.length;j++)
+    {
+      let count=0;
+      for(let i=j+1; i< s.length;i++)
+      {
+      
+      if(s[i]==s[j])
+      count++;
+        
+      }//  if(count>1){// brr+= s[j];
+
+  if(count>0 && ! brr.includes(s[j]))
+    { 
+      brr+=s[j]; 
+      brr+=count+1; 
+    }
+  
+}
+ return brr
+    
+};
+    </pre>
+    </div>
+    <div class="solution solution3">
+        <h4> Question 3: Count the Vowels</h4>
+        <h3>Solution Code:</h3>
+        <pre>
+          var Count_Vowels= (s) => 
+          {
+             let countOfVowels=0;
+             
+             for(let i=0;i< s.length;i++)
+             {
+               if(s[i]=="a" || s[i]=="e" || s[i]=="o" || s[i]=="u" || s[i]=="i" )
+               {
+                 
+                 countOfVowels++;
+               }
+               
+             }
+             return countOfVowels;
+          };
+           
+          </pre>
+    </div>
+
+    <div class="solution solution4">
+        <h4>Question 4: Concatenate the Strings</h4>
+        <h3>Solution Code:</h3>
+        <pre>
+          var Concatenate_Strings = (S1, S2) => 
+          {
+                return S1+S2
+                //return S1.concat(S2)
+          };
+           
+          </pre>
+    </div>
+    <div class="solution solution5">
+
+        <h4>Question 5: Find Length</h4>
+        <h3>Solution Code:</h3>
+        <pre>
+          const findLength = (S) => 
+          {
+            let a= S.length;
+            return a;
+          };
+           
+          </pre>
+    </div>
+
+    <div class="solution solution6">
+
+        <h4>Question 6: Find the Winner</h4>
+        <h3>Solution Code:</h3>
+        <pre> 
+          var Game_Winner = (S) => 
+          {
+            let countMaxOfA=0;
+            let countMaxOfD=0;
+            for(let i=0 ; i< S.length;i++){
+              if(S[i]=="A"){
+              countMaxOfA++;
+            }
+            else if(S[i]=="D"){
+              countMaxOfD++;
+            }
+            }
+            if(countMaxOfA>countMaxOfD){
+              return "Aditya";
+            }
+            else if(countMaxOfA< countMaxOfD){
+              return "Danish";
+            }
+            else return "Draw";
+          }
+           
+          </pre>
+    </div>
+    <div class="solution solution7">
+
+        <h4>Question 7: Join Strings.</h4>
+        <h3>Solution Code:</h3>
+        <pre>
+          const joinStrings = (S, P) => 
+          {
+              return S+P;
+                //return S.concat(P)
+          };
+           </pre>
+    </div>
+
+    <div class="solution solution8">
+
+        <h4>Question 8: Plaindrome Check</h4>
+        <h3>Solution Code:</h3>
+        <pre> 
+          var Palin_Check = (str) =>
+          {
+            let status="False";
+             for(let i=0;i< str.length/2;i++ ){
+                
+               if(str[i] == str[str.length- 1 - i]){
+                status="True";
+               
+             }
+               if(status=="True"){
+                 return "True";
+               }
+               else return "False";
+             }
+          }
+          
+          </pre>
+    </div>
+    <div class="solution solution9">
+
+        <h4>Question 9:Reverse the String
+        </h4>
+        <h3>Solution Code:</h3>
+        <pre>
+          var Reverse_String = (str) => 
+          {
+            let reversedStr="";
+              for(let i=str.length-1;i>=0;i--){
+                reversedStr+=str[i];
+              } 
+              return reversedStr;
+              //can use lastIndexOf too for this
+              
+          };
+           
+          </pre>
+    </div>
+    <div class="solution solution10">
+
+        <h4>Question 10:Match the Strings
+        </h4>
+        <h3>Solution Code:</h3>
+        <pre>
+          var String_Match = (S1,S2) => 
+          {
+               if(S1===S2){
+                 return "YES";
+               } 
+               else return "NO";
+          };
+        </pre>
+    </div>
+
+    <div class="solution solution11">
+
+        <h4>Question 11:String Replace
+        </h4>
+        <h3>Solution Code:</h3>
+        <pre>
+          var Replace = (S, pattern , text) => 
+          {
+               return S.replace(pattern,text);
+          };
+           
+        </pre>
+    </div>
+    <div class="solution solution12">
+
+        <h4>Question 12:Split the String
+        </h4>
+        <h3>Solution Code:</h3>
+        <pre>
+          var Split_the_string = (S) => 
+          {
+            
+             const array=S.split(" ");
+                    return array;      
+          };
+           
+        </pre>
+    </div>
+    <div class="solution solution12">
+
+        <h4>Question 13:Count the Vowels and Consonants
+        </h4>
+        <h3>Solution Code:</h3>
+        <pre>
+          var Count_Vowels= (S) => 
+          {
+             let vowels = 'aAeEiIoOuU';
+             let vowelsCount = 0;
+                 for(var i = 0; i < S.length ; i++) {
+                    if (vowels.indexOf(S[i]) !== -1){
+                       vowelsCount++;
+                   }
+                 }
+              return vowelsCount;
+                
+          };
+          var Count_Consonants= (S) => 
+          {
+              let vowels = 'aAeEiIoOuU';
+              let consonantCount = 0;
+                 for(var i = 0; i < S.length ; i++) {
+                    if (vowels.indexOf(S[i]) == -1){
+                       consonantCount++;
+                   }
+                 }
+              return consonantCount;
+          };
+           
+          </pre>
+    </div>
+
+</body>
+
+</html>

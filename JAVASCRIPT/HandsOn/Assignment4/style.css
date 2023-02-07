@@ -11,23 +11,24 @@ body {
     gap: 20px;
     justify-content: center;
     align-items: center;
+    background-color: #060606;
 }
 
 .solution {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 90%;
 }
 
 h1 {
     font-size: 30px;
-    color: #7D3C98;
-    text-decoration: underline 2px #120a15;
+    color: #FEFEFE;
+    text-decoration: underline 2px;
 }
 
 h2 {
     font-size: 30px;
-    color: #3498DB;
+    color: #6CDAE7;
     border: none;
 }
 
@@ -59,4 +60,6 @@ pre {
     font-size: 18px;
     border-top: none;
     padding-top: 2%;
+    color: #F0F3F4;
+    background-color: #1d1e22;
 }
