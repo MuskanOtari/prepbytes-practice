@@ -7,9 +7,10 @@ button.addEventListener("mouseout", function() {
     this.innerText = "Set Alarm";
 
 })
-
-
 button.addEventListener("click", function() {
+    let msg2 = document.getElementById('msg2');
+    msg2.style.display = 'none';
+
     let date = new Date();
     let hours = date.getHours();
 
@@ -32,7 +33,7 @@ button.addEventListener("click", function() {
         document.getElementById("containimg").src = "./image/eve.jpg";
     } else if (parseInt(nighttime.value) === hours) {
         document.getElementById("set_time").innerText = "CLOSE YOUR EYES AND SLEEP WELL!!";
-        document.getElementById("containimg").src = "./image/night.jpg";
+        document.getElementById("containimg").src = "./image/n8.jpg";
     }
 
     let timming = document.getElementsByClassName("timming");
@@ -41,7 +42,10 @@ button.addEventListener("click", function() {
     timming[2].innerText = naptime.options[naptime.selectedIndex].text;
     timming[3].innerText = nighttime.options[nighttime.selectedIndex].text;
 
+
+
 })
+
 
 function clock() {
     let date = new Date();
