@@ -83,6 +83,7 @@ table {
 .leftbox2 {
     display: flex;
     justify-content: space-between;
+    gap: 10%;
 }
 
 .empty {
@@ -120,47 +121,36 @@ td {
     align-items: center;
     padding: 5%;
     font-family: 'Bauhaus Hv BT';
-}
-
-.p {
-    position: absolute;
-    top: 20px;
-    font-weight: bold;
-}
-
-.p::after {
-    content: "Set Alarm";
-    visibility: visible;
-    padding-left: 80px;
-    padding-right: 80px;
-    border-radius: 2px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-image: linear-gradient(to right, #6E54EC, #CB52F8, #FC5EFF);
-}
-
-.p:hover::after {
-    content: "Party Time!!";
-    visibility: visible;
-    padding-left: 70px;
-    padding-right: 70px;
-    border-radius: 2px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-image: linear-gradient(to right, #FC5EFF, #CB52F8, #6E54EC);
+    justify-content: center;
 }
 
 .set_alarm {
     position: relative;
-    color: #FFFFFF;
-    width: 90%;
-    height: 40%;
-    cursor: default;
-    background-size: cover;
+    top: 20px;
+    font-weight: bold;
+    position: relative;
+    width: 50%;
+    height: 50%;
     font-family: 'Manrope';
     text-align: center;
-    border-radius: 2px;
+    size: 120px;
+    background-image: linear-gradient(to right, #6E54EC, #CB52F8, #FC5EFF);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
 }
+
+
+/* .set_alarm::after {
+    visibility: visible;
+    background-image: linear-gradient(to right, #6E54EC, #CB52F8, #FC5EFF);
+}
+
+.set_alarm:hover::after {
+    visibility: visible;
+    background-image: linear-gradient(to left, #FC5EFF, #CB52F8, #6E54EC);
+} */
 
 .wakeup {
     border-radius: 5px;
@@ -184,6 +174,7 @@ td {
     background-color: #FFFFFF;
     padding: 3%;
     padding-left: 10%;
+    padding-right: 10%;
     height: 15%;
     width: 100%;
     align-items: center;
@@ -195,12 +186,12 @@ td {
     font-family: 'Manrope';
 }
 
-.hr {
+.t {
     border-radius: 2px;
     background-image: url(./image/timeline.svg);
     padding: 2%;
     height: 65px;
-    width: 100px;
+    width: 100%;
     color: #8A11BF;
     display: flex;
     flex-direction: column;
@@ -213,7 +204,6 @@ td {
     background-image: url(./image/AM_svg.svg);
     background-repeat: no-repeat;
     color: #FFFFFF;
-    margin-left: 2%;
 }
 
 .index-1 {
@@ -243,20 +233,20 @@ td {
 .col2 {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 8px;
     padding-top: 2%;
 }
 
 .message_right {
     color: #8E53F0;
     font-size: 25px;
-    height: 20%;
+    height: 30%;
     width: 100%;
     font-family: 'Bauhaus Hv BT';
     text-align: center;
     border-radius: 6px;
     background-color: #FFFFFF;
-    margin-top: 4%;
+    margin-top: 8%;
 }
 
 h4 {
@@ -264,6 +254,19 @@ h4 {
 }
 
 .image {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    size: 40px;
+}
+
+#containimg {
+    height: 400px;
+    width: 500px;
+}
+
+image {
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
