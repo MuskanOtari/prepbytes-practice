@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="up">
+        <button id="playAgain">Play Again</button>
+        <h3>(Between 1 and 100)</h3>
+    </div>
+    <h1>Guess My Number!</h1>
+    <div class="unknown">
+        <h2 class="q">
+            ?
+        </h2>
+
+
+
+    </div>
+    <div class="main">
+
+        <div class="form">
+
+            <div class="left">
+
+
+                <td> <input type="number" name="userValue" id="guessid"></td>
+                <td><button id="btn" class="check" onclick="check()">Check!</button></td>
+
+
+            </div>
+
+            <div class="right">
+
+                <!-- <span class="crown">
+                </span> -->
+                <span class="message">
+                     Start guessing....</span>
+
+                <p class="chances ">💯 Chances: <span class="score">100</span></p>
+
+                <p class="level-higscore ">🥇 Highscore: <span class="highscore">00</span></p>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <script src="./script.js "></script>
+</body>
+
+</html>
