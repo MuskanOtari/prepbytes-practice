@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions HndsOn</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1>Javascript Functions HandsOn</h1>
+
+
+
+    <div class="Output">
+
+
+        <h4>Question 1: Write one example explaining how you can write a callback function ?
+        </h4>
+
+        <h3>Output Code:</h3>
+        <pre>
+            function saysHi(name){
+                console.log(`This is callback function that passed ${name}`);
+              } 
+              function passIt(callback){
+                let name = "Muskan";
+                callback(name);
+              }
+              passIt(saysHi);
+        </pre>
+    </div>
+    <div class="Output Output2">
+        <h4>Question 2: Write callback function to print numbers from 1 to 7, in which 1 should be printed after 1 sec , 2 should be printed after 2 sec, 3 should be printed after 3 sec and so on.
+        </h4>
+        <pre>
+          Explain callback hell.
+          Numbers
+          1
+          2
+          3
+          4
+          5
+          6
+          7
+      </pre>
+        <h3>Output Code:</h3>
+        <pre>
+            function PrintNumber(n){
+                for(let i=1;i<=n;i++){
+                  setTimeout(()=>{
+                  console.log(i);  
+                  },i*1000);
+                }
+              }
+              
+              PrintNumber(7);
+        </pre>
+    </div>
+    <div class="Output Output3">
+        <h4>Question 3: Write promise function to print numbers from 1 to 7, in which 1 should be printed after 1 sec , 2 should be printed after 2 sec, 3 should be printed after 3 sec and so on.
+        </h4>
+        <pre>
+          Numbers
+          1
+          2
+          3
+          4
+          5
+          6
+          7
+      </pre>
+        <h3>Output Code:</h3>
+        <pre> 
+          function print(num) {
+          return new Promise((resolve) => {
+              setTimeout(() => {
+                  console.log(num);
+                  resolve()
+              }, 1000)
+          })
+      }
+      let demo = Promise.resolve();
+      for (let i = 1; i <= 7; i++) {
+          demo = demo.then(() => print(i));
+      }
+        </pre>
+    </div>
+
+
+    <div class="Output Output4">
+        <h4>
+            Question 4: Create a promise function accepting a argument, if yes is passed to the function then it should go to resolved state and print Promise Resolved, and if nothing is passed then it should go to reject state and catch the error and print Promise
+            Rejected.
+        </h4>
+        <h3>Output Code:</h3>
+        <pre>
+          function print(a){
+            return new Promise(function (resolve, reject){
+             if(a==="yes"){
+              resolve("Promise is Resolved");
+             }
+             else{
+             reject("Promise is Rejected");
+             }
+            })
+        }
+        print("yes")
+            .then((res)=>console.log(res))
+            .catch((err)=>console.log(err))
+    
+      
+        </pre>
+
+    </div>
+    <div class="Output Output5">
+        <h4>
+            Question 5: Create examples to explain callback function.
+        </h4>
+        <pre>
+        function callback(name) {
+        alert(`Hello, ${name}`);
+        }
+        
+        function userInput(cb) {
+          const name = prompt("Please enter your name.");
+          cb(name);
+        }
+        
+        userInput(callback);
+      </pre>
+
+    </div>
+    <div class="Output Output6">
+
+        <h4>
+            Question 6: Create examples to explain callback hell function.
+        </h4>
+        <pre>
+          function myFunc1(callback) {
+            console.log("Function 1")
+            callback();
+        }
+        function myFunc2(callback) {
+            console.log("Function 2")
+            callback();
+        }
+        function myFunc3(callback) {
+            console.log("Function 3")
+            callback();
+        }
+        function myFunc4() {
+            console.log("Function 4")
+        }
+    
+        myFunc1(function () {
+            myFunc2(function () {
+                myFunc3(function () {
+                    myFunc4();
+                })
+            })
+        })
+        </pre>
+
+    </div>
+    <div class="Output Output7">
+
+        <h4>Question 7: Create examples to explain promises function. Ans.
+        </h4>
+        <h3>Output Code:</h3>
+        <pre>
+          function print(a){
+            return new Promise(function (resolve, reject){
+             if(a==="yes"){
+              resolve("Promise is Resolved");
+             }
+             else{
+             reject("Promise is Rejected");
+             }
+            })
+        }
+        print("yes")
+            .then((res)=>console.log(res))
+            .catch((err)=>console.log(err))
+          </pre>
+    </div>
+
+    <div class="Output Output8">
+        <h4>Question 8: Create examples to explain async await function.
+        </h4>
+        <pre>
+          async function getData() {
+            const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita%')
+            console.log(response);
+            const data = await response.json();
+            console.log(data);
+        }
+        getData();
+      </pre>
+
+
+    </div>
+
+
+
+    <div class="Output Output9">
+        <h4>Question 9: Create examples to explain promise.all function</h4>
+        <pre>
+          const p1 = Promise.resolve("pi"); 
+          const p2 = 3.14; 
+          const p3 = new Promise((resolve, reject) => { 
+              resolve("Maths"); 
+          });
+          
+          let returned_promise = Promise.all([p1, p2, p3]); 
+          returned_promise.then((array)=>{
+              console.log(array); 
+          })
+      </pre>
+
+    </div>
+
+
+    <hr>
+
+</body>
+
+</html>
