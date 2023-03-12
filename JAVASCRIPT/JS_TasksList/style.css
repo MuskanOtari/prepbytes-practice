@@ -1,0 +1,120 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: black;
+    color: #ffff;
+    margin-top: 2%;
+    margin: 2%;
+    font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+#p {
+    width: 150px;
+    font-size: large;
+    margin-top: 2%;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.div2 {
+    display: flex;
+    gap: 10%
+}
+
+.fa-plus {
+    color: #fff;
+}
+
+#createList {
+    margin-top: 0.5%;
+    font-size: 180%;
+    color: #47B5FF;
+}
+
+#createList {
+    cursor: pointer;
+}
+
+.bottom_list_icons {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 10%;
+    bottom: 10%;
+}
+
+#lists {
+    display: flex;
+    gap: 20%;
+    flex-wrap: wrap;
+    column-gap: 8%;
+}
+
+.style_listbox {
+    margin-top: 5%;
+    border-radius: 6px;
+}
+
+.plus {
+    color: blue;
+    position: absolute;
+    bottom: 1px;
+}
+
+.plus:hover {
+    cursor: pointer;
+}
+
+.trash {
+    font-size: 150%;
+    color: red;
+    position: absolute;
+    bottom: 1px;
+    margin-left: 160px;
+}
+
+.trash:hover {
+    cursor: pointer;
+}
+
+.mark_as_done {
+    height: 22px;
+    width: 100px;
+    border-radius: 12px;
+    background-color: red;
+    color: white;
+    font-size: x-small;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.Formlist {
+    margin-top: 2%;
+    list-style-type: none;
+}
+
+
+/* .div2 {
+    display: flex;
+    gap: 10px;
+    top: 2%;
+} */
+
+.div3 {
+    width: 500px;
+    height: 500px;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks List</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <style>
+        form {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        #listForm {
+            background-color: #FAF8F1;
+            border-radius: 5px;
+            padding: 5%;
+            width: 250px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 30%;
+            box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+        }
+        
+        #listName {
+            border: 2px solid black;
+            width: 110%;
+            height: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+            border: 1px solid gray;
+        }
+        
+        .btns {
+            background-color: orangered;
+            color: #fff;
+            border-radius: 15px;
+            width: 70px;
+            height: 3%;
+            padding: 5%;
+            border: none;
+        }
+        
+        .btns:hover {
+            cursor: pointer;
+        }
+        
+        .button {
+            display: flex;
+            gap: 20%;
+            margin-top: 6%;
+            justify-content: center;
+        }
+        
+        #label1 {
+            color: orangered;
+            font-size: larger;
+            margin-bottom: 5%;
+        }
+        
+        #create_list {
+            width: 50px;
+            height: 40px;
+        }
+        
+        .center {
+            width: 98vw;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #itemForm {
+            background-color: #FAF8F1;
+            border-radius: 5px;
+            padding: 5%;
+            width: 250px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 30%;
+            box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+        }
+        
+        #itemName {
+            border: 2px solid black;
+            width: 110%;
+            height: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+            border: 1px solid gray;
+        }
+        
+        .ulList {
+            color: black;
+            position: relative;
+            gap: 10px;
+            top: 2%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="head">
+            <h1>Tasks
+                <span style="font-weight: normal;">List</span>
+            </h1>
+            <div class="div2">
+                <i id="createList" class="fa-solid fa fa-plus-circle"></i>
+                <p id="p">Add Item</p>
+            </div>
+
+        </div>
+        <p>No items in the todo list</p>
+
+        <div id="lists">
+            <div id="Numberlist">
+
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="center">
+        <div id="listForm" style="visibility: hidden;">
+            <form>
+                <label for="add" id="label1">Add New List</label>
+                <input type="text" name="add" id="listName">
+                <div class="button">
+
+                    <button id="addList" class="btns">Add</button>
+                    <button id="close" class="btns">Close</button>
+                </div>
+            </form>
+        </div>
+        <div id="itemForm" style="visibility: hidden;">
+            <form>
+                <label for="adding" id="label1">Add New Item</label>
+                <input type="text" name="adding" id="itemName">
+                <div class="button">
+
+                    <button id="addItem" class="btns">Add</button>
+                    <button id="exit" class="btns">Exit</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+<script src="./index.js "></script>
+
+</html>
+
+</html>
