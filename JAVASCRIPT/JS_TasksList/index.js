@@ -140,7 +140,7 @@ function showItemForm(tag) {
             li.style.textDecoration = "line-through";
             li.style.opacity = "0.6";
             markssdone_button.style.cursor = "not-allowed";
-            // markssdone_button.style.opacity = "0.2";
+            markssdone_button.style.opacity = "0.6";
 
         });
 
