@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="name">
+        <input type="number" min="1" max="5" id="score">
+        <button id="submit">Submit</button>
+    </form>
+
+    <div>
+
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Score</th>
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script>
+        document.querySelector("#submit").addEventListener("click", handleSubmit);
+
+        function handleSubmit(event) {
+            //prevets the page from reloading
+            event.preventDefault();
+            console.log("Hi");
+
+            //to read the data of the form i.e input_text and number
+            let name = document.querySelector("#name").value;
+            let score = document.querySelector("#score").value;
+
+            //if array is present than parse string  into==> array or create a empty array
+            let arr = JSON.parse(localStorage.getItem("students")) || [];
+            let obj = {
+                    n: name,
+                    s: score
+                }
+                //add the array
+            arr.push(obj);
+            //store the value into the storage
+            localStorage.setItem("students", JSON.stringify(arr));
+            console.log(arr);
+            //display the result
+            displayData(arr);
+
+        }
+
+        function displayData(arr) {
+            document.querySelector("tbody").innerHTML = "";
+            for (let i = 0; i < arr.length; i++) {
+                //create row
+                let row = document.createElement("tr");
+                //create columns
+                let col1 = document.createElement("td");
+                let col2 = document.createElement("td");
+                //added the data of the form to the column
+                col1.innerText = arr[i].n;
+                col2.innerText = arr[i].s;
+                //I have inked row with these 2 columns
+                row.append(col1, col2);
+                console.log(row);
+                //I have inked tbody with the row
+                document.querySelector("tbody").appendChild(row);
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>

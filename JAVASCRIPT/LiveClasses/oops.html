@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    class Shape {
+
+        name;
+        sides;
+        sideLength;
+
+        constructor(name, sides, sideLength) {
+            this.name = name;
+            this.size = size;
+            this.sideLength = sideLength;
+        }
+
+
+        calcPerimeter() {
+            let parameter = this.sides * this.sideLength;
+            console.log(parameter);
+        }
+
+        Area() {
+            let area = this.sides * this.sides;
+            console.log(parameter);
+        }
+
+    }
+
+    class Square extends Shape {
+
+    }
+    let square = new Shape("square", 4, 5);
+    square.calcPerimeter();
+    let triangle = new Shape("triangle", 3, 3);
+    triangle.calcPerimeter();
+</script>

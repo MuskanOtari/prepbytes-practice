@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+
+</head>
+
+<body>
+
+
+    <h1>Hello</h1>
+    <p class="india">Rohit Sharma</p>
+    <p class="india">Surya Kumar Yadav</p>
+    <p class="aus">David Warner</p>
+    <p class="aus">Panting</p>
+    <p class="quer">rtrd</p>
+    <p class="quer">rtrd</p>
+    <p class="quer">rtrd</p>
+
+
+    <button id="btn" onclick=" changeColor() ">ChangeColor</button>
+    <script>
+        document.querySelector("#btn").addEventListener("click", changeColor);
+        document.querySelector("#btn").addEventListener("click", changeBackground);
+
+        function changeColor() {
+            let indianPlayer = document.getElementsByClassName("india ");
+            for (let i = 0; i < indianPlayer.length; i++) {
+                indianPlayer[i].style.color = "blue ";
+            }
+            let australia = document.getElementsByClassName("aus ");
+            for (let i = 0; i < australia.length; i++) {
+                australia[i].style.color = "yellow ";
+            }
+            let quer = document.querySelectorAll(".quer ");
+            for (let i = 0; i < quer.length; i++) {
+                quer[i].style.backgroundColor = "red ";
+            }
+
+        }
+
+        function changeBackground() {
+            let indianPlayer = document.querySelectorAll(".india");
+            for (let i = 0; i < indianPlayer.length; i++) {
+                indianPlayer[i].style.backgroundColor = "orange";
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>

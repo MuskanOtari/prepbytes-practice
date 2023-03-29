@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo">
+        Lorem ipsum dolor sit.
+        <p>Lorem ipsum dolor sit.</p> and <b>Lorem, ipsum.</b><pre>Lorem, ipsum dolor.</pre>
+    </div>
+
+    <button onclick="sample1()">innerText</button>
+    <button onclick="sample2()">innerHtml</button>
+
+
+
+    <script>
+        function sample1() {
+            var inner = document.getElementById("demo");
+            console.log(inner.innerText)
+        }
+
+        function sample2() {
+            var inner = document.getElementById("demo");
+            console.log(inner.innerHTML)
+        }
+    </script>
+</body>
+
+</html>

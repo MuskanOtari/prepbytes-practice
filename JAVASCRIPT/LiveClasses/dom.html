@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        pre {
+            font-weight: bold;
+            font-size: larger;
+            color: mediumpurple;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>// 1. Create a button , on click of which new Heading tag h1 should be added with text as "MERN stack" on the screen above button</pre>
+    <div></div>
+
+    <button id="btn">click</button>
+
+    </div>
+    <pre>// 2. Write code to get 1st H1 element from a webpage using DOM</pre>
+    <h2>Heading1</h2>
+    <h2>Heading2</h2>
+    <h2>Heading2</h2>
+    <h2>Heading2</h2>
+    <pre>// 3. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second
+    </pre>
+    <div class="clock">
+        <div id="date"></div>
+    </div>
+    <span id="hr"></span>
+    <span id="min"></span>
+    <span id="sec"></span>
+
+    <pre>// 4.Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy".
+        </pre>
+    <p id="content"></p>
+    <button id="change">Change</button>
+    <pre>// 5. Create an HTML page having content as Hello world and a button named "Hide Text." When user will click on this button hide the "Hello World" text
+    </pre>
+    <p id="content2"></p>
+    <button id="hide">Hide</button>
+</body>
+
+</html>
+<script>
+    let btn = document.querySelector("#btn");
+    btn.addEventListener("click", function() {
+            let d = document.querySelector("div");
+            let h = document.createElement("h2");
+            h.innerHTML = "MERN STACK";
+            d.append(h);
+
+        })
+        //W2. Write code to get 1st H1 element from a webpage using DOM
+    let h1 = document.querySelector("h2").style.backgroundColor = "yellow";
+
+    // 3. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second
+    function clock() {
+        var x = new Date().toLocaleTimeString();
+        document.getElementById("date").innerText = x;
+    }
+    setInterval(clock, 1000);
+
+    let date = new Date();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    let second = date.getSeconds();
+
+    document.getElementById("hr").innerText = hour;
+    document.getElementById("min").innerText = minute;
+    document.getElementById("sec").innerText = second;
+
+
+    // 4.Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy".
+    let change = document.querySelector("#change");
+    let cont = document.querySelector("#content");
+    cont.innerText = "Hello World!!!"
+    change.addEventListener("click", displayElevationA)
+
+    function displayElevationA() {
+        cont.innerText = "Welcome to Elevation academy!!!";
+
+    }
+
+    // 5. Create an HTML page having content as Hello world and a button named "Hide Text." When user will click on this button hide the "Hello World" text
+    let hide = document.querySelector("#hide");
+    let cont2 = document.querySelector("#content2");
+    cont2.innerText = "Hello World!!!";
+    hide.addEventListener("click", hidethePara);
+
+    function hidethePara() {
+        cont2.style.visibility = "hidden";
+    }
+    //https://jsonplaceholder.typicode.com/todos/1
+    //https: //jsonplaceholder.typicode.com/todos/1
+
+    //https: //jsonplaceholder.typicode.com/todos/1
+</script>
+</script>

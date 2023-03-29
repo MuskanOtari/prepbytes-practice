@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+</head>
+
+<body>
+    <p id="p"></p>
+    <div>
+        <form action="">
+            <div class="div"></div>
+            <h1 id="heading"></h1>
+            <input type="text" name="add" id="additem">
+            <button id="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
+<script>
+    let btn = document.querySelector("#btn");
+    btn.addEventListener("click", function changeHeading(e) {
+        e.preventDefault();
+        let getItem = document.querySelector("#additem").value;
+        let div = document.querySelector(".div");
+        let h1 = document.createElement("h1");
+        h1.innerHTML = getItem;
+        div.append(h1);
+
+
+    })
+
+    function callDate() {
+        let h = document.querySelector("#p");
+        let d = new Date().toLocaleTimeString();
+
+        h.innerText = d;
+    }
+    setInterval(callDate, 1000);
+</script>

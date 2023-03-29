@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    //Write a code to calculate area of a rectangle using inner function. 
+    //In this case outer function should accept parameter length and
+    //inner function should accept parameter breadth.
+    // function area(l) {
+    //     return function inner(b) {
+    //         console.log("Area of Rectangle " + (l * b));
+    //     }
+    // }
+    // const ar = area(2);
+    // ar(3);
+
+    //Take a variable in outer function and create an inner function to 
+    //increase the counter every time it is called
+    // function outer() {
+    //     let count = 0;
+
+    //     function inner() {
+
+    //         return count += 1;
+
+    //     };
+    //     return inner;
+    // }
+    // let c = outer();
+    // console.log(c());
+    // console.log(c());
+    // console.log(c());
+    // "Print Output
+
+    // var a = 12;
+    // (function() {
+    //     alert(a);
+    // })();
+    var a = 10;
+    // var x = (function() {
+    //     var a = 12;
+    //     return function() {
+    //         alert(a);
+    //     };
+    // })();
+    // x();
+    // "
+    var globalVar = "xyz";
+
+
+    (function outerFunc(outerArg) {
+        var outerVar = 'a';
+
+        (function innerFunc(innerArg) {
+            var innerVar = 'b';
+
+            console.log(
+                "outerArg = " + outerArg + "\n" +
+                "outerArg = " + innerArg + "\n" +
+                "outerArg = " + outerVar + "\n" +
+                "outerArg = " + outerVar + "\n" +
+                "outerArg = " + globalVar);
+        })(456);
+    })(123);
+</script>

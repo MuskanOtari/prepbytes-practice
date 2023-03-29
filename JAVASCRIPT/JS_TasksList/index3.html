@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mock</title>
+</head>
+
+<body>
+    <h1></h1>
+</body>
+
+</html>
+<script>
+    // let promise = new Promise(function(res, rej) {
+    //     let x = "muskan";
+    //     let y = "hjjnv";
+    //     if (x === y) {
+    //         res();
+    //     } else {
+    //         rej();
+    //     }
+    // }).then(function() {
+    //     console.log("Resolved");
+    //     console.log("x===y");
+    // }).catch(function() {
+    //     console.log("Rejected");
+    //     console.log("x is not = y");
+    // })
+    //map and fllter
+
+    // let ar = [1, 2, 3, 4, 6];
+    // let m = ar.map((n) => {
+    //     return n * 2
+    // });
+
+    // let f = ar.filter((a) => {
+    //     if (a > 3) {
+    //         return a;
+    //     }
+    // })
+    // console.log("Map==>")
+    // console.log(m);
+    // console.log("Filter==>")
+    // console.log(f);
+    //example ofSelfInvoking Function
+    // (function() {
+    //     console.log("I am self invoked");
+    // })()
+    function callDate() {
+        let h = document.querySelector("h1");
+        let d = new Date().toLocaleString();
+        h.innerHTML = d;
+    }
+    setInterval(callDate, 1000)
+</script>
