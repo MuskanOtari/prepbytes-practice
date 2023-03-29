@@ -1,0 +1,25 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 10px;
+    margin: auto;
+}
+
+.g {
+    background-color: plum;
+}
+
+@media screen and (min-width: 601px)and (max-width:1024px) {
+    .grid {
+        width: 50px;
+        height: 200px;
+    }
+}
+
+@media (max-width:601px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+}

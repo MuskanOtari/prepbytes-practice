@@ -1,0 +1,143 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: plum;
+    transition: width 2s;
+    transform: scaleX(2);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20%;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%
+}
+
+h1 {
+    text-decoration-style: wavy;
+}
+
+.button {
+    height: 30px;
+    width: 100px;
+}
+
+.container3 {
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: aquamarine;
+}
+
+@media screen and (min-width: 601px)and (max-width:1024px) {
+    .container2 {
+        flex-direction: column;
+    }
+    input {
+        background-color: orange;
+    }
+    .container3 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:601px) {
+    .container2 {
+        flex-direction: column;
+    }
+    input {
+        background-color: yellow;
+    }
+    .container3 {
+        flex-direction: column;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 5px;
+    text-align: center;
+}
+
+.g {
+    background-color: plum;
+}
+
+.g1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: plum;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {}
+    100% {
+        transform: translateX(30px);
+    }
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 30%;
+}
+
+.nav {
+    display: flex;
+    gap: 20%
+}
+
+.card {
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+}
+
+.inline {
+    display: inline;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.inline-block {
+    display: inline-block;
+    border: 2px solid black;
+}
+
+.card {}
