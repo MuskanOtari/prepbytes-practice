@@ -231,6 +231,32 @@
          
          </pre>
     </div>
+    <div class="solution solution9">
+
+        <h4>Question 9:Birthday Game
+        </h4>
+        <h3>Solution Code:</h3>
+        <pre> 
+          function Birthday_Game(arr,D ,M) {
+           
+          let count=0;
+          for(let i=0; i<=arr.length-M; i++){
+            let sum=0;
+            for(let j=0; j< M; j++)
+            {
+              
+              sum=sum+arr[i+j];
+            }
+          if(sum==D){
+            count++;
+          }  
+          }
+          
+          return count;
+          }
+          
+          </pre>
+    </div>
 
 </body>
 

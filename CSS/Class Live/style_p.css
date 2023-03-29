@@ -10,22 +10,19 @@ body {
     background-image: url(./image/img1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: auto;
     align-items: center;
 }
 
 .p2 {
     font-family: 'Moon Dance', cursive;
-    font-size: 50px;
-    margin: auto;
+    font-size: 350%;
     text-align: center;
     color: #FFF;
 }
 
 .p3 {
-    font-family: "Yaldevi";
-    font-size: 20px;
-    margin: auto;
+    font-family: "Poppins";
+    font-size: 200%;
     text-align: center;
     color: #F7E8F6;
     padding-bottom: 4px;
@@ -46,12 +43,14 @@ body {
 .btn {
     background-color: #e2bdff;
     margin: auto;
-    border-radius: 3px;
+    border-radius: 5px;
     font-family: "Romanesco";
-    font-size: 28px;
+    font-size: 180%;
     text-align: center;
     display: flex;
     cursor: pointer;
+    border: none;
+    padding: 10%;
 }
 
 .btn:hover {
@@ -78,7 +77,20 @@ body {
     justify-content: space-evenly;
 }
 
-.header {
+.links_parent :hover {
+    color: #fff;
+}
+
+a {
+    font-family: "Yaldevi";
+    text-decoration: none;
+    animation: wave-animation 0.3s infinite;
+    transition: all 0.2s ease-in-out;
+}
+
+@keyframes wave-animation {}
+
+header {
     position: sticky;
     top: 0;
     box-shadow: 0 3px 6px rgb(0 0 0 / 5%);
@@ -92,4 +104,17 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 50%;
+}
+
+.clickable {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: center;
+    padding: 2%;
+}
+
+.boxmodel {
+    display: flex;
+    flex-direction: column;
 }

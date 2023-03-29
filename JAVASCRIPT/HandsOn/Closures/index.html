@@ -147,7 +147,20 @@
             Take a variable in outer function and create an inner function to increase the counter every time it is called
         </h4>
         <pre>
-         
+          function outer() {
+            let count = 0;
+    
+            function inner() {
+    
+                return count += 1;
+    
+            };
+            return inner;
+        }
+        let counter = outer();
+        console.log(counter());
+        console.log(counter());
+        console.log(counter());
       </pre>
         <h3>Output Code:
 

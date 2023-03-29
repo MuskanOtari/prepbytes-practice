@@ -175,21 +175,25 @@ var Count_Occ = (s) =>
         <pre> 
           var Palin_Check = (str) =>
           {
-            let status="False";
-             for(let i=0;i< str.length/2;i++ ){
-                
-               if(str[i] == str[str.length- 1 - i]){
-                status="True";
-               
-             }
-               if(status=="True"){
-                 return "True";
-               }
-               else return "False";
-             }
+            let rev=ReverseFunction(str);
+            
+            for(let i=0; i< str.length;i++){
+              if(str[i]!=rev[i]){
+                return "False";
+              }
+            }
+            return "True";
+            
           }
-          
-          </pre>
+          function ReverseFunction(str){
+            let reverse="";
+            for(let i=str.length-1;i>=0;i--){
+              reverse+=str[i];
+              
+            }
+            return reverse;
+          }
+        </pre>
     </div>
     <div class="solution solution9">
 
